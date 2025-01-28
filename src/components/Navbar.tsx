@@ -66,11 +66,16 @@ function Navbar() {
           </div>
 
           <div className="flex-1 flex flex-col gap-6 px-1">
-            <Link href="/about" className="relative group text-lg font-medium">
+            <Link
+              onClick={() => setIsOpen(false)}
+              href="/about"
+              className="relative group text-lg font-medium"
+            >
               About
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
+              onClick={() => setIsOpen(false)}
               href="/area-benifits"
               className="relative group text-lg font-medium"
             >
@@ -78,6 +83,7 @@ function Navbar() {
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
+              onClick={() => setIsOpen(false)}
               href="/clients"
               className="relative group text-lg font-medium"
             >
@@ -85,6 +91,7 @@ function Navbar() {
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
+              onClick={() => setIsOpen(false)}
               href="/book-visit"
               className="bg-white text-black w-fit px-6 py-2.5 rounded-full text-lg font-medium transition-all hover:bg-gray-200"
             >
@@ -96,8 +103,8 @@ function Navbar() {
         {isOpen && (
           <div
             onClick={() => setIsOpen(false)}
-            className="fixed inset-0 z-30 bg-black/50"
-          ></div>
+            className="fixed inset-0 z-30 bg-black"
+          />
         )}
       </div>
     </nav>
