@@ -12,14 +12,14 @@ function Navbar() {
 
   return (
     <nav className="w-[90%] mx-auto h-12 mt-8  flex flex-row items-center justify-between px-4">
-      <div>
+      <Link href="/">
         <Image
           src={White_Bovisa_District_Image}
           width={153}
           height={22}
           alt="Bovisa District"
         />
-      </div>
+      </Link>
 
       {/* ========== Desktop Navbar ========== */}
       <div className="hidden sm:flex flex-row justify-end items-center gap-4 md:gap-10">

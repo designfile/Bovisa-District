@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        "birds-of-paradise": ["Birds of Paradise"],
+      },
     },
     animation: {
       "slide-up": "slide-up 0.3s ease-out",

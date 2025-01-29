@@ -5,7 +5,7 @@ import Clients from "./(sections)/clients/page";
 
 export default function Home() {
   return (
-    <div className="max-w-[1220px] mx-auto">
+    <div>
       <About />
       <AreaBenifits />
       <Clients />
