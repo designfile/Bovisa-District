@@ -6,6 +6,7 @@ import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import clsx from "clsx";
 import { RxCross2 } from "react-icons/rx";
+import BookVisitLink from "./BookVisitLink";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -35,12 +36,7 @@ function Navbar() {
           Clients
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full" />
         </Link>
-        <Link
-          href="/book-visit"
-          className="text-black bg-white px-6 py-2.5 rounded-full transition-all hover:bg-gray-200"
-        >
-          Book a visit
-        </Link>
+        <BookVisitLink />
       </div>
 
       {/* ========== Mobile Navbar ========== */}
