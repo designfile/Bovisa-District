@@ -37,15 +37,18 @@ function AreaBenifits() {
   ];
 
   return (
-    <div className="animate-slide-up px-8 mt-10">
+    <div className="animate-slide-up px-8 mt-10 max-w-[1220px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 md:grid-rows-[256px_auto_auto] w-full gap-10 md:gap-y-20">
+        {/* Heading */}
         <h1 className="text-[30px]  md:text-[40px]">
           Area <span className="font-birds-of-paradise">Benifits</span>
         </h1>
-        <h1 className="text-[30px] md:text-[35px]">
+        {/* Sub heading */}
+        <h2 className="text-[30px] md:text-[35px]">
           Strategically located near Politecnico di Milano, the Bovisa District
           offers numerous advantages:
-        </h1>
+        </h2>
+        {/* Benifits list */}
         {AreaBenifitsList.map((el, idx) => {
           return (
             <div key={idx} className="flex items-start gap-x-10">
@@ -67,6 +70,7 @@ function AreaBenifits() {
           );
         })}
       </div>
+      {/* Train image */}
       <Image
         src="/img/train-station-1.png"
         width={1280}

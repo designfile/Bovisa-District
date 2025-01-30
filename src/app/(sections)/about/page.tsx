@@ -27,7 +27,7 @@ function About() {
   ];
 
   return (
-    <div className="animate-slide-up px-8">
+    <div className="animate-slide-up px-8 max-w-[1220px] mx-auto">
       {/* Header Section */}
       <div className="h-[80vh] w-full relative mt-10 md:mt-20">
         <Image
