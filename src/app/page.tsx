@@ -9,9 +9,7 @@ export default function Home() {
       <About />
       <AreaBenifits />
       <Clients />
-      <div className="py-10 md:pt-32">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

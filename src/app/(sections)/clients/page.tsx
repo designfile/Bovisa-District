@@ -36,7 +36,10 @@ function Clients() {
   ];
 
   return (
-    <div className="animate-slide-up px-8 mt-10 md:mb-10 max-w-[1220px] mx-auto">
+    <div
+      id="clients"
+      className="animate-slide-up pb-8 pt-16 md:pb-10 max-w-[1220px] mx-auto bg-black text-white"
+    >
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
         {/* Heading */}
         <h1 className="text-[30px] md:text-[40px]">
@@ -73,7 +76,7 @@ function Clients() {
         </div>
       </div>
       {/* Testimonials image and content */}
-      <div className="relative text-black mt-10 md:mt-32">
+      <div className="relative text-black pt-10 md:pt-32">
         <Image
           width={1054}
           height={408}

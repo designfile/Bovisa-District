@@ -37,7 +37,10 @@ function AreaBenifits() {
   ];
 
   return (
-    <div className="animate-slide-up px-8 mt-10 max-w-[1220px] mx-auto">
+    <section
+      id="area-benifits"
+      className="animate-slide-up pb-8 pt-16 max-w-[1220px] mx-auto bg-black text-white"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 md:grid-rows-[256px_auto_auto] w-full gap-10 md:gap-y-20">
         {/* Heading */}
         <h1 className="text-[30px]  md:text-[40px]">
@@ -77,7 +80,7 @@ function AreaBenifits() {
         height={600}
         alt="train-station-1"
       />
-    </div>
+    </section>
   );
 }
 

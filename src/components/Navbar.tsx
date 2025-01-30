@@ -43,7 +43,7 @@ function Navbar() {
         {/* ========== Desktop Navbar ========== */}
         <div className="hidden sm:flex flex-row justify-end items-center gap-4 md:gap-10">
           <Link
-            href="/about"
+            href="/#about"
             className={clsx(
               "relative group px-1",
               isBookVisit ? "text-black" : "text-white"
@@ -58,7 +58,7 @@ function Navbar() {
             />
           </Link>
           <Link
-            href="/area-benifits"
+            href="/#area-benifits"
             className={clsx(
               "relative group px-1",
               isBookVisit ? "text-black" : "text-white"
@@ -73,7 +73,7 @@ function Navbar() {
             />
           </Link>
           <Link
-            href="/clients"
+            href="/#clients"
             className={clsx(
               "relative group px-1",
               isBookVisit ? "text-black" : "text-white"
@@ -120,7 +120,7 @@ function Navbar() {
             <div className="h-full w-full flex-1 flex flex-col pb-12 justify-end gap-8 px-1">
               <Link
                 onClick={() => setIsOpen(false)}
-                href="/about"
+                href="/#about"
                 className="relative group text-[40px] font-medium"
               >
                 About
@@ -128,7 +128,7 @@ function Navbar() {
               </Link>
               <Link
                 onClick={() => setIsOpen(false)}
-                href="/area-benifits"
+                href="/#area-benifits"
                 className="relative group text-[40px] font-medium"
               >
                 Area Benefits
@@ -136,7 +136,7 @@ function Navbar() {
               </Link>
               <Link
                 onClick={() => setIsOpen(false)}
-                href="/clients"
+                href="/#clients"
                 className="relative group text-[40px] font-medium"
               >
                 Clients

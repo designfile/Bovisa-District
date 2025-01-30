@@ -5,7 +5,7 @@ import BookVisitLink from "./BookVisitLink";
 
 function Footer() {
   return (
-    <footer className="w-[90%]  max-w-[1220px] mx-auto h-12 mt-8  flex flex-row items-center justify-between px-4">
+    <footer className="max-w-[1220px] mx-auto h-12 px-4 py-12 md:pt-32 flex flex-row items-center justify-between bg-black">
       <Link href="/">
         <Image
           src={White_Bovisa_District_Image}
@@ -16,21 +16,21 @@ function Footer() {
       </Link>
       <div className="flex flex-row justify-end items-center gap-4 md:gap-10">
         <Link
-          href="/about"
+          href="/#about"
           className="hidden md:block relative group text-white px-1"
         >
           About
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full" />
         </Link>
         <Link
-          href="/area-benifits"
+          href="/#area-benifits"
           className="hidden md:block relative group text-white px-1"
         >
           Area Benifits
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full" />
         </Link>
         <Link
-          href="/clients"
+          href="/#clients"
           className="hidden md:block relative group text-white px-1"
         >
           Clients

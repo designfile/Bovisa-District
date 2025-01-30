@@ -27,20 +27,23 @@ function About() {
   ];
 
   return (
-    <div className="animate-slide-up px-8 max-w-[1220px] mx-auto">
+    <div
+      id="about"
+      className="animate-slide-up py-8 md:pt-16 max-w-[1220px] mx-auto bg-black text-white"
+    >
       {/* Header Section */}
-      <div className="h-[80vh] w-full relative mt-10 md:mt-20">
+      <div className="h-[80vh] w-full relative">
         <Image
           src="/img/header-image-1.png"
           alt="header-image-1"
           layout="fill"
           objectFit="contain"
-          className="absolute inset-0"
+          className="absolute inset-0 mt-10 md:mt-20"
         />
         <div className="relative top-[10%] inset-0 flex flex-col justify-center items-center gap-3 text-center">
           <h1 className="md:text-5xl text-3xl text-white">
             Welcome to the{" "}
-            <span className="font-birds-of-paradise">Bovisa District</span>
+            <span className="font-birds-of-paradise md:inline-block block">Bovisa District</span>
           </h1>
           <h2 className="md:text-[27px] text-[22px] opacity-30">
             A hub of innovation and urban development
@@ -153,7 +156,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="h-full w-full relative mb-20 -mt-20">
+      <div className="h-full w-full relative pb-20 -mt-20">
         <Image
           src="/img/trees-image-1.png"
           width={1220}
