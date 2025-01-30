@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         "birds-of-paradise": ["Birds of Paradise"],
+        "europe-grotesk": ["Europe Grotesk"],
       },
     },
     animation: {

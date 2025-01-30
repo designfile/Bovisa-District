@@ -22,6 +22,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
 }
 
 @font-face {
@@ -33,4 +34,14 @@ body {
 
 .text-birds-of-paradise {
   font-family: "Birds of Paradise";
+}
+@font-face {
+  font-family: "Europe Grotesk";
+  src: url("/fonts/_EuropeGrotesk.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-europe-grotesk {
+  font-family: "Europe Grotesk";
 }

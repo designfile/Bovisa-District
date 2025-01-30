@@ -17,7 +17,7 @@ function BookVisitLink({ action, color }: Props) {
       }}
       href="/book-visit"
       className={clsx(
-        " px-6 py-2.5 rounded-full transition-all",
+        " px-7 py-3 rounded-full transition-all",
         color === "black"
           ? "text-white bg-black hover:bg-gray-900"
           : "text-black bg-white hover:bg-gray-200"

@@ -103,7 +103,7 @@ function Navbar() {
 
           <div
             className={clsx(
-              "fixed inset-0 h-full w-f z-40 flex flex-row-reverse justify-between items-start backdrop-blur-md text-black bg-white transition-all duration-300 px-6",
+              "fixed inset-0 h-full w-f z-40 flex flex-row-reverse justify-between items-start text-black bg-white transition-all duration-300 px-6",
               isOpen ? "translate-x-0" : "translate-x-full"
             )}
           >

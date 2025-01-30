@@ -14,8 +14,8 @@ function Clients() {
       image: Vector_1,
       content: (
         <>
-          Luxury showrooms (we already have confirmations from <br /> major
-          multinational companies).
+          Luxury showrooms (we already have confirmations from{" "}
+          <br className="hidden md:block" /> major multinational companies).
         </>
       ),
     },
@@ -28,7 +28,7 @@ function Clients() {
       content: (
         <>
           Luxury businesses that require exclusive and well-
-          <br />
+          <br className="hidden md:block" />
           connected spaces.
         </>
       ),
@@ -38,19 +38,20 @@ function Clients() {
   return (
     <div
       id="clients"
-      className="animate-slide-up pb-8 pt-16 md:pb-10 max-w-[1220px] mx-auto bg-black text-white"
+      className="animate-slide-up px-4 pb-8 md:pt-16 md:pb-10 max-w-[1220px] mx-auto bg-black text-white"
     >
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
         {/* Heading */}
         <h1 className="text-[30px] md:text-[40px]">
           Targer <span className="font-birds-of-paradise">Clients</span>
         </h1>
-        <div className="flex flex-col gap-10 md:gap-20">
+        <div className="flex flex-col gap-10 md:gap-16">
           {/* Sub heading or Heading of Clients list */}
           <h1 className="text-[30px] md:text-[40px]">
-            The Bovisa District is perfect <br /> for various types of
-            companies:
+            The Bovisa District is perfect for{" "}
+            <br className="hidden md:block" /> various types of companies:
           </h1>
+          <br className="hidden md:block" />
           {/* Clients list */}
           {ClientsList.map((el, idx) => (
             <div key={idx} className="flex items-start gap-x-10">
@@ -76,24 +77,31 @@ function Clients() {
         </div>
       </div>
       {/* Testimonials image and content */}
-      <div className="relative text-black pt-10 md:pt-32 ">
-        <Image
-          width={1054}
-          height={408}
-          src="/img/testimonials-references-1.png"
-          alt="testimonials-references-1"
-          className="rounded-t-md md:rounded-md object-cover w-full h-full border-b-[1px] md:border-none border-black"
-        />
+      <div className="relative text-black pt-10 md:pt-32">
+        <div className="relative w-full h-[50vh] rounded-t-md md:rounded-md overflow-hidden">
+          <Image
+            src="/img/testimonials-references-1.png"
+            alt="testimonials-references-1"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="right"
+            className="border-b-[1px] md:border-none border-black"
+          />
+        </div>
+
         <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 p-4 md:px-10 md:py-6 bg-white md:bg-transparent text-black rounded-b-md md:rounded-none">
-          <div className="md:absolute md:top-[150px] md:right-[5%] p-4 rounded-md max-w-[450px]">
-            <h1 className="text-[13px] md:text-[15px] font-europe-grotesk">
+          {/* Top-right description box */}
+          <div className="md:absolute md:top-[25%] md:right-[5%] p-4 bg-white md:bg-transparent rounded-md max-w-[450px]">
+            <h1 className="text-[13px] md:text-[15px] font-europe-grotesk tracking-tight">
               The Bovisa District, a rising hub for innovation, is already home
-              to leading companies and multinationals. With limited spaces still
+              to leading companies and multinationals With limited spaces still
               available, it offers a safe, modern environment and more than just
-              a typical warehouse.
+              a typical warehouse
             </h1>
           </div>
-          <div className="md:absolute md:bottom-[10%] md:left-[5%] p-4 rounded-md">
+
+          {/* Bottom-left heading */}
+          <div className="md:absolute md:bottom-[8%] md:left-[5%] p-4 rounded-md">
             <h1 className="text-[25px] md:text-[42px]">
               Testimonials &#38;{" "}
               <span className="font-birds-of-paradise">References</span>

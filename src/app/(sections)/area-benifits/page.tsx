@@ -14,11 +14,11 @@ function AreaBenifits() {
       content: <>Near Dergano metro station: 12 minutes by foot.</>,
     },
     {
-      image: Vector_2,
+      image: Vector_3,
       content: <>Easy access to the ring road/highway: 8 minutes by car.</>,
     },
     {
-      image: Vector_3,
+      image: Vector_2,
       content: (
         <>
           Immediate access to Bovisa train station: <br /> 7 minutes by foot.
@@ -39,16 +39,17 @@ function AreaBenifits() {
   return (
     <section
       id="area-benifits"
-      className="animate-slide-up pb-8 pt-16 max-w-[1220px] mx-auto bg-black text-white"
+      className="animate-slide-up px-4 pb-8 pt-16 md:pt-28 max-w-[1220px] mx-auto bg-black text-white"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 md:grid-rows-[256px_auto_auto] w-full gap-10 md:gap-y-20">
         {/* Heading */}
-        <h1 className="text-[30px]  md:text-[40px]">
+        <h1 className="text-[30px] md:text-[40px]">
           Area <span className="font-birds-of-paradise">Benifits</span>
         </h1>
         {/* Sub heading */}
         <h2 className="text-[30px] md:text-[35px]">
-          Strategically located near Politecnico di Milano, the Bovisa District
+          Strategically located near Politecnico{" "}
+          <br className="hidden md:block" /> di Milano, the Bovisa District
           offers numerous advantages:
         </h2>
         {/* Benifits list */}
@@ -74,12 +75,15 @@ function AreaBenifits() {
         })}
       </div>
       {/* Train image */}
-      <Image
-        src="/img/train-station-1.png"
-        width={1280}
-        height={600}
-        alt="train-station-1"
-      />
+      <div className="relative w-full h-[50vh] overflow-hidden md:mt-10">
+        <Image
+          src="/img/train-station-1.png"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="right"
+          alt="train-station-1"
+        />
+      </div>
     </section>
   );
 }

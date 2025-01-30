@@ -5,7 +5,7 @@ import BookVisitLink from "./BookVisitLink";
 
 function Footer() {
   return (
-    <footer className="max-w-[1220px] mx-auto h-12 px-4 py-12 md:pt-32 flex flex-row items-center justify-between bg-black">
+    <footer className="max-w-[1220px] mx-auto h-12 px-4 py-16 md:py-32 flex flex-row items-center justify-between bg-black">
       <Link href="/">
         <Image
           src={White_Bovisa_District_Image}

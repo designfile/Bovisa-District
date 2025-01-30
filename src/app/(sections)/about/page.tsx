@@ -32,46 +32,54 @@ function About() {
       className="animate-slide-up py-8 md:pt-16 max-w-[1220px] mx-auto bg-black text-white"
     >
       {/* Header Section */}
-      <div className="h-[80vh] w-full relative">
+      <div className="h-[90vh] md:h-[70vh] w-full relative overflow-hidden">
         <Image
           src="/img/header-image-1.png"
           alt="header-image-1"
           layout="fill"
-          objectFit="contain"
-          className="absolute inset-0 mt-10 md:mt-20"
+          objectFit="cover"
+          className="absolute inset-0 object-left md:object-center"
         />
         <div className="relative top-[10%] inset-0 flex flex-col justify-center items-center gap-3 text-center">
           <h1 className="md:text-5xl text-3xl text-white">
-            Welcome to the{" "}
-            <span className="font-birds-of-paradise md:inline-block block">Bovisa District</span>
+            Welcome to <br className="block md:hidden" /> the{" "}
+            <span className="font-birds-of-paradise">Bovisa District</span>
           </h1>
           <h2 className="md:text-[27px] text-[22px] opacity-30">
-            A hub of innovation and urban development
+            A hub of innovation and urban <br className="block md:hidden" />{" "}
+            development
           </h2>
           <BookVisitLink color="white" />
         </div>
       </div>
 
       {/* Map Section */}
-      <div className="relative text-black md:-mt-6">
-        <Image
-          width={1054}
-          height={408}
-          src="/img/map-1.png"
-          alt="map-1"
-          className="rounded-t-md md:rounded-md object-cover w-full h-full border-b-[1px] md:border-none border-black"
-        />
-        <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 px-10 py-6 bg-white md:bg-transparent text-black rounded-b-md md:rounded-none">
-          <div className="md:absolute top-[5%] right-[5%] p-4 rounded-md max-w-[450px]">
+      <div className="relative text-black md:pt-10 px-4">
+        <div className="relative w-full h-[50vh] md:h-[50vh] rounded-t-md md:rounded-md overflow-hidden">
+          <Image
+            src="/img/map-1.png"
+            alt="map-1"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="left"
+            className="border-b-[1px] md:border-none border-black"
+          />
+        </div>
+
+        <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 px-4 py-6 bg-white md:bg-transparent text-black rounded-b-md md:rounded-none tracking-tight">
+          {/* Top-right description box */}
+          <div className="md:absolute top-[10%] right-[5%] p-4 bg-white md:bg-transparent rounded-md max-w-[450px]">
             <h1 className="text-[13px] md:text-[15px] font-europe-grotesk">
               This project, near the renowned Politecnico di Milano, offers{" "}
               <span className="font-birds-of-paradise">
                 modern and versatile
-              </span>{" "}
+              </span>
               spaces for companies looking for a dynamic and technologically
-              advanced environment.
+              advanced environment
             </h1>
           </div>
+
+          {/* Bottom-left heading */}
           <div className="md:absolute bottom-[10%] left-[5%] p-4 rounded-md">
             <h1 className="text-[25px] md:text-[42px]">
               <span className="font-birds-of-paradise">Overview of</span> Bovisa
@@ -117,25 +125,31 @@ function About() {
         </div>
 
         {/* Warehouse Specifications */}
-        <div className="flex flex-col md:flex-row justify-between gap-12">
+        <div className="flex flex-col md:flex-row justify-between gap-12 md:pt-32">
           {/* Left text */}
           <h1 className="md:text-4xl text-3xl italic">
-            <span className="font-birds-of-paradise">Warehouse</span>{" "}
+            <span className="font-birds-of-paradise">Warehouse</span>
+            {"   "}
             Specifications
           </h1>
 
           {/* Right text */}
           <div className="flex flex-col gap-10 max-w-[480px]">
             <h1 className="text-3xl leading-snug font-light text-[#676767]">
-              The warehouses in the Bovisa District range in size
-              <span className="text-white"> from 350 to 1,000 </span>
+              The warehouses in the Bovisa <br className="hidden md:block" />{" "}
+              District range in size{" "}
+              <span className="text-white">
+                {" "}
+                from 350 to <br className="hidden md:block" /> 1,000{" "}
+              </span>{" "}
               square meters. Each unit offers:
             </h1>
 
+            <br className="hidden md:block" />
             {/* Specification List */}
             {WarehouseSpecification.map((el, idx) => {
               return (
-                <div key={idx} className="flex items-start gap-8">
+                <div key={idx} className="flex items-start gap-8 md:mt-4">
                   <div className="w-fit h-full flex gap-1 items-start">
                     (
                     <Image
@@ -146,7 +160,7 @@ function About() {
                       className="mt-1"
                     />
                     )
-                    <span className="md:text-lg text-[15px] ml-4">
+                    <span className="md:text-lg text-[15px] ml-8">
                       {el.content}
                     </span>
                   </div>
@@ -156,27 +170,31 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="h-full w-full relative pb-20 -mt-20">
-        <Image
-          src="/img/trees-image-1.png"
-          width={1220}
-          height={700}
-          alt="trees-image-1"
-        />
+      <div className="h-full w-full relative pb-10 md:pb-20 -mt-20">
+        <div className="relative w-full h-[70vh] overflow-hidden">
+          <Image
+            src="/img/trees-image-1.png"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            alt="trees-image-1"
+          />
+        </div>
+
         <div className="flex flex-col md:flex-row justify-between">
           <h1 className="md:block hidden text-[40px] italic">
             Representative <span className="font-normal">Properties</span>
           </h1>
 
-          <div className="flex flex-col gap-8 w-full md:max-w-xl items-start justify-center md:px-0 px-2">
-            <span className="text-3xl md:text-4xl font-normal leading-tight">
+          <div className="flex flex-col gap-8 w-full md:max-w-[532px] items-start justify-center md:px-0 px-8">
+            <span className="text-[30px] md:text-[35px] font-normal leading-tight">
               The Bovisa District is not just a collection of buildings but{" "}
               <span className="font-birds-of-paradise">a true ecosystem</span>.
               The large courtyards allow for easy parking and loading/unloading
               operations, while the gardens and surrounding green areas offer a
               pleasant and relaxing environment for employees and visitors.
             </span>
-            <div>
+            <div className="mt-6 md:mt-12">
               <BookVisitLink color="white" />
             </div>
           </div>
