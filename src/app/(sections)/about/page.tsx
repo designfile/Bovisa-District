@@ -53,7 +53,7 @@ function About() {
       </div>
 
       {/* Map Section */}
-      <div className="relative text-black -mt-20">
+      <div className="relative text-black md:-mt-6">
         <Image
           width={1054}
           height={408}

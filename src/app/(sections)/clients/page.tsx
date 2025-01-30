@@ -76,7 +76,7 @@ function Clients() {
         </div>
       </div>
       {/* Testimonials image and content */}
-      <div className="relative text-black pt-10 md:pt-32">
+      <div className="relative text-black pt-10 md:pt-32 ">
         <Image
           width={1054}
           height={408}
@@ -85,7 +85,7 @@ function Clients() {
           className="rounded-t-md md:rounded-md object-cover w-full h-full border-b-[1px] md:border-none border-black"
         />
         <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 p-4 md:px-10 md:py-6 bg-white md:bg-transparent text-black rounded-b-md md:rounded-none">
-          <div className="md:absolute top-[5%] right-[5%] p-4 rounded-md max-w-[450px]">
+          <div className="md:absolute md:top-[150px] md:right-[5%] p-4 rounded-md max-w-[450px]">
             <h1 className="text-[13px] md:text-[15px] font-europe-grotesk">
               The Bovisa District, a rising hub for innovation, is already home
               to leading companies and multinationals. With limited spaces still
@@ -93,7 +93,7 @@ function Clients() {
               a typical warehouse.
             </h1>
           </div>
-          <div className="md:absolute bottom-[10%] left-[5%] p-4 rounded-md">
+          <div className="md:absolute md:bottom-[10%] md:left-[5%] p-4 rounded-md">
             <h1 className="text-[25px] md:text-[42px]">
               Testimonials &#38;{" "}
               <span className="font-birds-of-paradise">References</span>
