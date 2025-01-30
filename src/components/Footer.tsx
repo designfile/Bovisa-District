@@ -36,7 +36,7 @@ function Footer() {
           Clients
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full" />
         </Link>
-        <BookVisitLink />
+        <BookVisitLink color="white" />
       </div>
     </footer>
   );

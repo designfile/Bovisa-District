@@ -45,7 +45,7 @@ function About() {
           <h2 className="md:text-[27px] text-[22px] opacity-30">
             A hub of innovation and urban development
           </h2>
-          <BookVisitLink />
+          <BookVisitLink color="white" />
         </div>
       </div>
 
@@ -174,7 +174,7 @@ function About() {
               pleasant and relaxing environment for employees and visitors.
             </span>
             <div>
-              <BookVisitLink />
+              <BookVisitLink color="white" />
             </div>
           </div>
         </div>

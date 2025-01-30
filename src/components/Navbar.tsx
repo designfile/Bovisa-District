@@ -18,11 +18,15 @@ function Navbar() {
   return (
     <header
       className={clsx(
-        "sticky top-0 left-0 z-10",
-        pathname === "/book-visit" ? "bg-white" : "backdrop-blur-md"
+        "sticky top-0 left-0 z-20",
+        pathname === "/book-visit" ? "bg-white" : "bg-black"
       )}
     >
-      <nav className="w-[90%] max-w-[1220px] mx-auto h-12 py-8 flex flex-row items-center justify-between px-4">
+      <nav
+        className={clsx(
+          "max-w-[1220px] mx-auto h-12 py-8 flex flex-row items-center justify-between px-4"
+        )}
+      >
         <Link href="/">
           <Image
             src={
@@ -83,7 +87,7 @@ function Navbar() {
               )}
             />
           </Link>
-          <BookVisitLink />
+          <BookVisitLink color={isBookVisit ? "black" : "white"} />
         </div>
 
         {/* ========== Mobile Navbar ========== */}
@@ -99,7 +103,7 @@ function Navbar() {
 
           <div
             className={clsx(
-              "fixed inset-0 z-40 flex flex-row-reverse justify-between items-start backdrop-blur-md text-black bg-white transition-all duration-300 px-6",
+              "fixed inset-0 h-full w-f z-40 flex flex-row-reverse justify-between items-start backdrop-blur-md text-black bg-white transition-all duration-300 px-6",
               isOpen ? "translate-x-0" : "translate-x-full"
             )}
           >
@@ -139,7 +143,7 @@ function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
               </Link>
               <div>
-                <BookVisitLink action={() => setIsOpen(false)} />
+                <BookVisitLink action={() => setIsOpen(false)} color="black" />
               </div>
             </div>
           </div>

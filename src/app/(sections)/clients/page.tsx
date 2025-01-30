@@ -68,7 +68,7 @@ function Clients() {
             </div>
           ))}
           <div className="hidden md:block">
-            <BookVisitLink />
+            <BookVisitLink color="white" />
           </div>
         </div>
       </div>
