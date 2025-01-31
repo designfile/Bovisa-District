@@ -47,7 +47,7 @@ function Clients() {
         </h1>
         <div className="flex flex-col gap-10 md:gap-16">
           {/* Sub heading or Heading of Clients list */}
-          <h1 className="text-[30px] md:text-[40px]">
+          <h1 className="text-[30px] md:text-[40px] md:w-[550px]">
             The Bovisa District is perfect for{" "}
             <br className="hidden md:block" /> various types of companies:
           </h1>
@@ -56,15 +56,17 @@ function Clients() {
           {ClientsList.map((el, idx) => (
             <div key={idx} className="flex items-start gap-x-10">
               <div className="w-fit h-full flex gap-1 items-start">
-                (
-                <Image
-                  src={el.image}
-                  alt={`vector-${idx + 1}`}
-                  width={16}
-                  height={16}
-                  className="mt-1"
-                />
-                )
+                <div className="w-fit h-full flex gap-1 items-start md:mr-4 mt-1">
+                  (
+                  <Image
+                    src={el.image}
+                    alt={`vector-${idx + 1}`}
+                    width={16}
+                    height={16}
+                    className="mt-1"
+                  />
+                  )
+                </div>
                 <span className="md:text-lg text-[15px] ml-10 md:ml-4">
                   {el.content}
                 </span>
@@ -93,10 +95,12 @@ function Clients() {
           {/* Top-right description box */}
           <div className="md:absolute md:top-[25%] md:right-[5%] p-4 bg-white md:bg-transparent rounded-md max-w-[450px]">
             <h1 className="text-[13px] md:text-[15px] font-europe-grotesk tracking-tight">
-              The Bovisa District, a rising hub for innovation, is already home
-              to leading companies and multinationals With limited spaces still
-              available, it offers a safe, modern environment and more than just
-              a typical warehouse
+              The Bovisa District, a rising hub for innovation, is already home{" "}
+              <br className="hidden md:block" />
+              to leading companies and multinationals With limited spaces{" "}
+              <br className="hidden md:block" /> still available, it offers a
+              safe, modern environment and more{" "}
+              <br className="hidden md:block" /> than just a typical warehouse
             </h1>
           </div>
 

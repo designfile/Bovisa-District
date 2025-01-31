@@ -5,7 +5,7 @@ import Vector_3 from "../../../../public/svg/Vector-3.svg";
 import { JSX } from "react";
 
 function AreaBenifits() {
-  const AreaBenifitsList: {
+  const AreaBenifitsDesktopList: {
     image: string;
     content: JSX.Element;
   }[] = [
@@ -35,6 +35,36 @@ function AreaBenifits() {
       ),
     },
   ];
+  const AreaBenifitsMobileList: {
+    image: string;
+    content: JSX.Element;
+  }[] = [
+    {
+      image: Vector_1,
+      content: (
+        <>
+          Immediate access to Bovisa train station: <br /> 7 minutes by foot..
+        </>
+      ),
+    },
+    {
+      image: Vector_2,
+      content: <>Near Dergano metro station: 12 minutes by foot.</>,
+    },
+    {
+      image: Vector_1,
+      content: <>Easy access to the ring road/highway: 8 minutes by car.</>,
+    },
+    {
+      image: Vector_3,
+      content: (
+        <>
+          A wide range of nearby amenities, including restaurants, <br /> cafes,
+          shops, parks, and sport centers.
+        </>
+      ),
+    },
+  ];
 
   return (
     <section
@@ -53,9 +83,29 @@ function AreaBenifits() {
           offers numerous advantages:
         </h2>
         {/* Benifits list */}
-        {AreaBenifitsList.map((el, idx) => {
+        {AreaBenifitsDesktopList.map((el, idx) => {
           return (
-            <div key={idx} className="flex items-start gap-x-10">
+            <div key={idx} className="hidden md:flex items-start gap-x-10">
+              <div className="w-fit h-full flex gap-1 items-start">
+                (
+                <Image
+                  src={el.image}
+                  alt={`vector-${idx + 1}`}
+                  width={14}
+                  height={14}
+                  className="mt-1.5 mx-[1px]"
+                />
+                )
+                <span className="md:text-lg text-[15px] ml-10 md:ml-7">
+                  {el.content}
+                </span>
+              </div>
+            </div>
+          );
+        })}
+        {AreaBenifitsMobileList.map((el, idx) => {
+          return (
+            <div key={idx} className="flex md:hidden items-start gap-x-10">
               <div className="w-fit h-full flex gap-1 items-start">
                 (
                 <Image

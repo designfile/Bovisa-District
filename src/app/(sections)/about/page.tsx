@@ -5,7 +5,7 @@ import Vector_3 from "../../../../public/svg/Vector-3.svg";
 import BookVisitLink from "@/components/BookVisitLink";
 
 function About() {
-  const WarehouseSpecification: {
+  const WarehouseSpecificationDesktopList: {
     image: string;
     content: string;
   }[] = [
@@ -21,6 +21,26 @@ function About() {
     },
     {
       image: Vector_3,
+      content:
+        "Advanced security systems and state-of-the-art fire protection infrastructure.",
+    },
+  ];
+  const WarehouseSpecificationMobileList: {
+    image: string;
+    content: string;
+  }[] = [
+    {
+      image: Vector_1,
+      content:
+        "Optimal ceiling height for various types of industrial and commercial activities.",
+    },
+    {
+      image: Vector_3,
+      content:
+        "High-load-bearing floors, suitable for heavy machinery and storage.",
+    },
+    {
+      image: Vector_2,
       content:
         "Advanced security systems and state-of-the-art fire protection infrastructure.",
     },
@@ -71,12 +91,13 @@ function About() {
         <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 px-4 py-6 bg-white md:bg-transparent text-black rounded-b-md md:rounded-none tracking-tight">
           {/* Top-right description box */}
           <div className="md:absolute top-[10%] right-[5%] p-4 bg-white md:bg-transparent rounded-md max-w-[450px]">
-            <h1 className="text-[13px] md:text-[15px] font-europe-grotesk">
+            <h1 className="text-[13px] md:text-[15px] font-europe-grotesk tracking-tight">
               This project, near the renowned Politecnico di Milano, offers{" "}
-              <span className="font-birds-of-paradise">
+              <span className="font-birds-of-paradise tracking-normal mr-1">
                 modern and versatile
               </span>
-              spaces for companies looking for a dynamic and technologically
+              spaces for companies looking for a{" "}
+              <br className="hidden md:block" /> dynamic and technologically
               advanced environment
             </h1>
           </div>
@@ -137,7 +158,7 @@ function About() {
           </h1>
 
           {/* Right text */}
-          <div className="flex flex-col gap-10 max-w-[480px]">
+          <div className="flex flex-col gap-10 max-w-[500px]">
             <h1 className="text-3xl leading-snug font-light text-[#676767]">
               The warehouses in the Bovisa <br className="hidden md:block" />{" "}
               District range in size{" "}
@@ -150,9 +171,37 @@ function About() {
 
             <br className="hidden md:block" />
             {/* Specification List */}
-            {WarehouseSpecification.map((el, idx) => {
+            {WarehouseSpecificationDesktopList.map((el, idx) => {
               return (
-                <div key={idx} className="flex items-start gap-8 md:mt-4">
+                <div
+                  key={idx}
+                  className="hidden md:flex items-start gap-8 md:mt-4"
+                >
+                  <div className="w-fit h-full flex gap-1 items-start">
+                    <div className="w-fit h-full flex gap-1 items-start md:mr-4 mt-1">
+                      (
+                      <Image
+                        src={el.image}
+                        alt={`vector-${idx + 1}`}
+                        width={14}
+                        height={14}
+                        className="mt-1.5 mx-[1px]"
+                      />
+                      )
+                    </div>
+                    <span className="md:text-lg text-[15px] ml-8">
+                      {el.content}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+            {WarehouseSpecificationMobileList.map((el, idx) => {
+              return (
+                <div
+                  key={idx}
+                  className="flex md:hidden items-start gap-8 md:mt-4"
+                >
                   <div className="w-fit h-full flex gap-1 items-start">
                     <div className="w-fit h-full flex gap-1 items-start md:mr-4 mt-1">
                       (
