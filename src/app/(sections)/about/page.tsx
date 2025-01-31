@@ -40,7 +40,7 @@ function About() {
           objectFit="cover"
           className="absolute inset-0 object-left md:object-center"
         />
-        <div className="relative top-[10%] inset-0 flex flex-col justify-center items-center gap-3 text-center">
+        <div className="relative top-[5%] inset-0 flex flex-col justify-center items-center gap-2 text-center">
           <h1 className="md:text-5xl text-3xl text-white">
             Welcome to <br className="block md:hidden" /> the{" "}
             <span className="font-birds-of-paradise">Bovisa District</span>
@@ -49,12 +49,14 @@ function About() {
             A hub of innovation and urban <br className="block md:hidden" />{" "}
             development
           </h2>
-          <BookVisitLink color="white" />
+          <div className="mt-4">
+            <BookVisitLink color="white" />
+          </div>
         </div>
       </div>
 
       {/* Map Section */}
-      <div className="relative text-black md:pt-10 px-4">
+      <div className="relative text-black md:pt-10 px-4 md:mx-16">
         <div className="relative w-full h-[50vh] md:h-[50vh] rounded-t-md md:rounded-md overflow-hidden">
           <Image
             src="/img/map-1.png"
@@ -90,31 +92,32 @@ function About() {
       </div>
 
       {/* Details and Specification Section */}
-      <div className="flex flex-col gap-28 mt-20 text-white bg-black px-8 py-20">
+      <div className="flex flex-col gap-28 mt-20 text-white bg-black px-8 py-20 md:mx-16">
         {/* Project Details */}
         <div className="flex flex-col md:flex-row justify-between md:gap-0 gap-12">
           {/* Left text */}
-          <h1 className="text-4xl italic">
+          <h1 className="text-4xl">
             Project <span className="font-birds-of-paradise">Details</span>
           </h1>
 
           {/* Right text */}
           <div className="flex flex-col md:flex-row md:items-start max-w-[450px] md:gap-8 gap-4">
-            <div className="w-fit h-full flex gap-1 items-start md:mr-4">
+            <div className="w-fit h-full flex gap-1 items-start md:mr-4 mt-1">
               (
               <Image
                 src={Vector_1}
                 alt="vector-1"
-                width={16}
-                height={16}
-                className="mt-1"
+                width={14}
+                height={14}
+                className="mt-1.5 mx-[1px]"
               />
               )
             </div>
             <span className="text-lg leading-relaxed">
               The Bovisa District represents the redevelopment of a historic
-              industrial area, transformed into a complex of modern warehouses
-              with aluminum and glass facades.
+              industrial area, transformed into a complex{" "}
+              <br className="hidden md:block" /> of modern warehouses with
+              aluminum and glass facades.
               <br />
               <br />
               Each warehouse is designed to offer functionality, aesthetics, and
@@ -127,7 +130,7 @@ function About() {
         {/* Warehouse Specifications */}
         <div className="flex flex-col md:flex-row justify-between gap-12 md:pt-32">
           {/* Left text */}
-          <h1 className="md:text-4xl text-3xl italic">
+          <h1 className="md:text-4xl text-3xl">
             <span className="font-birds-of-paradise">Warehouse</span>
             {"   "}
             Specifications
@@ -151,15 +154,17 @@ function About() {
               return (
                 <div key={idx} className="flex items-start gap-8 md:mt-4">
                   <div className="w-fit h-full flex gap-1 items-start">
-                    (
-                    <Image
-                      src={el.image}
-                      alt={`vector-${idx + 1}`}
-                      width={16}
-                      height={16}
-                      className="mt-1"
-                    />
-                    )
+                    <div className="w-fit h-full flex gap-1 items-start md:mr-4 mt-1">
+                      (
+                      <Image
+                        src={el.image}
+                        alt={`vector-${idx + 1}`}
+                        width={14}
+                        height={14}
+                        className="mt-1.5 mx-[1px]"
+                      />
+                      )
+                    </div>
                     <span className="md:text-lg text-[15px] ml-8">
                       {el.content}
                     </span>
@@ -181,21 +186,24 @@ function About() {
           />
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between">
-          <h1 className="md:block hidden text-[40px] italic">
-            Representative <span className="font-normal">Properties</span>
+        <div className="flex flex-col md:flex-row justify-between md:mx-16">
+          <h1 className="md:block hidden text-[40px]">
+            Representative{" "}
+            <span className="font-birds-of-paradise">Properties</span>
           </h1>
 
           <div className="flex flex-col gap-8 w-full md:max-w-[532px] items-start justify-center md:px-0 px-8">
             <span className="text-[30px] md:text-[35px] font-normal leading-tight">
               The Bovisa District is not just a collection of buildings but{" "}
               <span className="font-birds-of-paradise">a true ecosystem</span>.
-              The large courtyards allow for easy parking and loading/unloading
-              operations, while the gardens and surrounding green areas offer a
-              pleasant and relaxing environment for employees and visitors.
+              The large courtyards allow for easy parking and loading/{" "}
+              <br className="hidden md:block" />
+              unloading operations, while the gardens and surrounding green
+              areas offer a pleasant and relaxing environment for employees and
+              visitors.
             </span>
             <div className="mt-6 md:mt-12">
-              <BookVisitLink color="white" />
+              <BookVisitLink color="white" pX="px-8" pY="py-3.5" />
             </div>
           </div>
         </div>

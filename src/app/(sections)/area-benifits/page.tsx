@@ -41,7 +41,7 @@ function AreaBenifits() {
       id="area-benifits"
       className="animate-slide-up px-4 pb-8 pt-16 md:pt-28 max-w-[1220px] mx-auto bg-black text-white"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 md:grid-rows-[256px_auto_auto] w-full gap-10 md:gap-y-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 md:grid-rows-[256px_auto_auto] w-full gap-10 md:gap-y-20 md:mx-16">
         {/* Heading */}
         <h1 className="text-[30px] md:text-[40px]">
           Area <span className="font-birds-of-paradise">Benifits</span>
@@ -61,12 +61,12 @@ function AreaBenifits() {
                 <Image
                   src={el.image}
                   alt={`vector-${idx + 1}`}
-                  width={16}
-                  height={16}
-                  className="mt-1"
+                  width={14}
+                  height={14}
+                  className="mt-1.5 mx-[1px]"
                 />
                 )
-                <span className="md:text-lg text-[15px] ml-10 md:ml-4">
+                <span className="md:text-lg text-[15px] ml-10 md:ml-7">
                   {el.content}
                 </span>
               </div>

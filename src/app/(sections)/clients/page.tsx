@@ -40,10 +40,10 @@ function Clients() {
       id="clients"
       className="animate-slide-up px-4 pb-8 md:pt-16 md:pb-10 max-w-[1220px] mx-auto bg-black text-white"
     >
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:mx-16">
         {/* Heading */}
         <h1 className="text-[30px] md:text-[40px]">
-          Targer <span className="font-birds-of-paradise">Clients</span>
+          Target <span className="font-birds-of-paradise">Clients</span>
         </h1>
         <div className="flex flex-col gap-10 md:gap-16">
           {/* Sub heading or Heading of Clients list */}
