@@ -93,7 +93,7 @@ function Clients() {
 
         <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 p-4 md:px-10 md:py-6 bg-white md:bg-transparent text-black rounded-b-md md:rounded-none">
           {/* Top-right description box */}
-          <div className="md:absolute md:top-[25%] md:right-[5%] p-4 bg-white md:bg-transparent rounded-md max-w-[450px]">
+          <div className="md:absolute md:top-[25%] md:right-[5%] p-4 bg-white md:bg-transparent rounded-md max-w-[450px] ">
             <h1 className="text-[13px] md:text-[15px] font-europe-grotesk tracking-tight">
               The Bovisa District, a rising hub for innovation, is already home{" "}
               <br className="hidden md:block" />
@@ -107,7 +107,11 @@ function Clients() {
           {/* Bottom-left heading */}
           <div className="md:absolute md:bottom-[8%] md:left-[5%] p-4 rounded-md">
             <h1 className="text-[25px] md:text-[42px]">
-              Testimonials &#38;{" "}
+              Testimonials{" "}
+              <span className="hidden md:inline-block mr-1">&#38;</span>
+              <span className="font-birds-of-paradise md:hidden mr-1">
+                &#38;
+              </span>
               <span className="font-birds-of-paradise">References</span>
             </h1>
           </div>
