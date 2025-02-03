@@ -2,6 +2,8 @@ import Image from "next/image";
 import Vector_1 from "../../../../public/svg/Vector-1.svg";
 import Vector_2 from "../../../../public/svg/Vector-2.svg";
 import Vector_3 from "../../../../public/svg/Vector-3.svg";
+import TestimonialsImage from "../../../../public/svg/testimonials-references-1.svg";
+
 import { JSX } from "react";
 import BookVisitLink from "@/components/BookVisitLink";
 
@@ -38,7 +40,7 @@ function Clients() {
   return (
     <div
       id="clients"
-      className="animate-slide-up px-4 pb-8 md:pt-16 md:pb-10 max-w-[1220px] mx-auto bg-black text-white"
+      className="animate-slide-up px-4 pb-8 md:pt-32 md:pb-10 max-w-[1220px] mx-auto bg-black text-white"
     >
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:mx-16">
         {/* Heading */}
@@ -47,11 +49,10 @@ function Clients() {
         </h1>
         <div className="flex flex-col gap-10 md:gap-16">
           {/* Sub heading or Heading of Clients list */}
-          <h1 className="text-[30px] md:text-[40px] md:w-[550px]">
+          <h1 className="text-[30px] md:text-[40px] md:w-[550px] md:pb-4">
             The Bovisa District is perfect for{" "}
             <br className="hidden md:block" /> various types of companies:
           </h1>
-          <br className="hidden md:block" />
           {/* Clients list */}
           {ClientsList.map((el, idx) => (
             <div key={idx} className="flex items-start gap-x-10">
@@ -80,18 +81,18 @@ function Clients() {
       </div>
       {/* Testimonials image and content */}
       <div className="relative text-black pt-10 md:pt-32">
-        <div className="relative w-full h-[50vh] rounded-t-md md:rounded-md overflow-hidden">
+        <div className="relative w-full h-[50vh] overflow-hidden">
           <Image
-            src="/img/testimonials-references-1.png"
+            src={TestimonialsImage}
             alt="testimonials-references-1"
             layout="fill"
             objectFit="cover"
             objectPosition="right"
-            className="border-b-[1px] md:border-none border-black"
+            className="border-b-[1px] md:border-none border-black rounded-t-xl md:rounded-xl overflow-hidden"
           />
         </div>
 
-        <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 p-4 md:px-10 md:py-6 bg-white md:bg-transparent text-black rounded-b-md md:rounded-none">
+        <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 p-4 md:px-10 md:py-6 bg-white md:bg-transparent text-black rounded-b-xl md:rounded-none">
           {/* Top-right description box */}
           <div className="md:absolute md:top-[25%] md:right-[5%] p-4 bg-white md:bg-transparent rounded-md max-w-[450px] ">
             <h1 className="text-[13px] md:text-[15px] font-europe-grotesk tracking-tight">

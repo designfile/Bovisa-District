@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import White_Bovisa_District_Image from "../../public/img/White-bovisa-district-1.png";
+
+import White_Bovisa_District_Image from "../../public/svg/White-bovisa-district-logo.svg";
 import BookVisitLink from "./BookVisitLink";
 
 function Footer() {

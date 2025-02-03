@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import White_Bovisa_District_Image from "../../public/img/White-bovisa-district-1.png";
-import Black_Bovisa_District_Image from "../../public/img/Black-bovisa-district-1.png";
+import White_Bovisa_District_Image from "../../public/svg/White-bovisa-district-logo.svg";
+import Black_Bovisa_District_Image from "../../public/svg/Black-bovisa-district-logo.svg";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import clsx from "clsx";
@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <header
       className={clsx(
-        "sticky top-0 left-0 z-20",
+        "sticky top-0 left-0 z-20 md:pt-4 md:pb-2",
         pathname === "/book-visit" ? "bg-white" : "bg-black"
       )}
     >

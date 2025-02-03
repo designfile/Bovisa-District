@@ -45,3 +45,9 @@ body {
 .text-europe-grotesk {
   font-family: "Europe Grotesk";
 }
+
+@media (max-width: 767px) {
+  .custom-image {
+    object-position: 85% center; /* Adjust as needed */
+  }
+}

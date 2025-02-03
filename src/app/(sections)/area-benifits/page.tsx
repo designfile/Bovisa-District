@@ -2,6 +2,8 @@ import Image from "next/image";
 import Vector_1 from "../../../../public/svg/Vector-1.svg";
 import Vector_2 from "../../../../public/svg/Vector-2.svg";
 import Vector_3 from "../../../../public/svg/Vector-3.svg";
+import TrainStationImage from "../../../../public/svg/train-image-1.svg";
+
 import { JSX } from "react";
 
 function AreaBenifits() {
@@ -69,9 +71,9 @@ function AreaBenifits() {
   return (
     <section
       id="area-benifits"
-      className="animate-slide-up px-4 pb-8 pt-16 md:pt-28 max-w-[1220px] mx-auto bg-black text-white"
+      className="animate-slide-up px-4 pb-8 md:pb-0 pt-16 md:pt-28 max-w-[1220px] mx-auto bg-black text-white"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 md:grid-rows-[256px_auto_auto] w-full gap-10 md:gap-y-20 md:mx-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 md:grid-rows-[256px_auto_auto] w-full gap-10 md:gap-y-20 md:mx-16 px-4 md:px-0">
         {/* Heading */}
         <h1 className="text-[30px] md:text-[40px]">
           Area <span className="font-birds-of-paradise">Benifits</span>
@@ -125,12 +127,12 @@ function AreaBenifits() {
         })}
       </div>
       {/* Train image */}
-      <div className="relative w-full h-[50vh] overflow-hidden md:mt-10">
+      <div className="relative w-full h-[60vh] md:h-[70vh] overflow-hidden md:mt-10">
         <Image
-          src="/img/train-station-1.png"
+          src={TrainStationImage}
           layout="fill"
           objectFit="cover"
-          objectPosition="right"
+          className="custom-image" // Apply the custom class
           alt="train-station-1"
         />
       </div>
