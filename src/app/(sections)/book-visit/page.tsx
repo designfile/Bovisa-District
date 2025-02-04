@@ -1,13 +1,35 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { SendBookVisitData } from "@/actions";
 import EmailInput from "@/components/input/EmailInput";
 import TextInput from "@/components/input/TextInput";
+import clsx from "clsx";
+import { useFormStatus } from "react-dom";
+import toast, { Toaster } from "react-hot-toast";
+
+function SubmitButton() {
+  const { pending } = useFormStatus();
+  return (
+    <button
+      className={clsx(
+        "text-white px-12 py-3 rounded-full transition-all",
+        !pending ? "bg-black" : "bg-gray-500"
+      )}
+      disabled={pending}
+    >
+      {pending ? "Sending..." : "Submit"}
+    </button>
+  );
+}
 
 export default function BookVisit() {
   async function handleSubmit(formData: FormData) {
-    const result = await SendBookVisitData(formData);
-
-    alert(result.message);
+    try {
+      const response = await SendBookVisitData(formData);
+      toast.success(response.message);
+    } catch (error: any) {
+      toast.error(error.message);
+    }
   }
 
   return (
@@ -54,12 +76,11 @@ export default function BookVisit() {
             <span className="hidden md:inline-block">+39 (338) 813 90 44</span>
           </a>
           <div className="w-fit">
-            <button className="bg-black text-white px-12 py-3 rounded-full transition-all">
-              Submit
-            </button>
+            <SubmitButton />
           </div>
         </div>
       </form>
+      <Toaster />
     </div>
   );
 }

@@ -132,7 +132,7 @@ function AreaBenifits() {
           src={TrainStationImage}
           layout="fill"
           objectFit="cover"
-          className="custom-image" // Apply the custom class
+          className="train-image"
           alt="train-station-1"
         />
       </div>
