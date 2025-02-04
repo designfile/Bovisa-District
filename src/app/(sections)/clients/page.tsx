@@ -6,6 +6,7 @@ import TestimonialsImage from "../../../../public/svg/testimonials-references-1.
 
 import { JSX } from "react";
 import BookVisitLink from "@/components/BookVisitLink";
+import clsx from "clsx";
 
 function Clients() {
   const ClientsList: {
@@ -57,7 +58,12 @@ function Clients() {
           {ClientsList.map((el, idx) => (
             <div key={idx} className="flex items-start gap-x-10">
               <div className="w-fit h-full flex gap-1 items-start">
-                <div className="w-fit h-full flex gap-1 items-start md:mr-4 mt-1">
+                <div
+                  className={clsx(
+                    "w-fit h-full flex gap-1 items-start md:mr-4",
+                    idx === 1 ? "ml-0" : "mt-1"
+                  )}
+                >
                   (
                   <Image
                     src={el.image}
@@ -81,7 +87,7 @@ function Clients() {
       </div>
       {/* Testimonials image and content */}
       <div className="relative text-black pt-10 md:pt-32">
-        <div className="relative w-full h-[50vh] overflow-hidden">
+        <div className="relative w-full h-[43vh] md:h-[50vh] overflow-hidden">
           <Image
             src={TestimonialsImage}
             alt="testimonials-references-1"
@@ -92,9 +98,9 @@ function Clients() {
           />
         </div>
 
-        <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 p-4 md:px-10 md:py-6 bg-white md:bg-transparent text-black rounded-b-xl md:rounded-none">
+        <div className="flex flex-col-reverse md:flex-col justify-between md:absolute inset-0 p-2 md:px-10 md:py-6 bg-white md:bg-transparent text-black rounded-b-xl md:rounded-none">
           {/* Top-right description box */}
-          <div className="md:absolute md:top-[25%] md:right-[5%] p-4 bg-white md:bg-transparent rounded-md max-w-[450px] ">
+          <div className="md:absolute md:top-[25%] md:right-[5%] p-2 pt-4 bg-white md:bg-transparent rounded-md max-w-[450px] ">
             <h1 className="text-[13px] md:text-[15px] font-europe-grotesk tracking-tight">
               The Bovisa District, a rising hub for innovation, is already home{" "}
               <br className="hidden md:block" />
@@ -106,7 +112,7 @@ function Clients() {
           </div>
 
           {/* Bottom-left heading */}
-          <div className="md:absolute md:bottom-[8%] md:left-[5%] p-4 rounded-md">
+          <div className="md:absolute md:bottom-[8%] md:left-[5%] p-2 rounded-md">
             <h1 className="text-[25px] md:text-[42px]">
               Testimonials{" "}
               <span className="hidden md:inline-block mr-1">&#38;</span>

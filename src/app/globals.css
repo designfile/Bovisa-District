@@ -48,6 +48,6 @@ body {
 
 @media (max-width: 767px) {
   .train-image {
-    object-position: 85% center; /* Adjust as needed */
+    background-position: 85% center; /* Adjust as needed */
   }
 }

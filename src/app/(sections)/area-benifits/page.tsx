@@ -2,7 +2,6 @@ import Image from "next/image";
 import Vector_1 from "../../../../public/svg/Vector-1.svg";
 import Vector_2 from "../../../../public/svg/Vector-2.svg";
 import Vector_3 from "../../../../public/svg/Vector-3.svg";
-import TrainStationImage from "../../../../public/svg/train-image-1.svg";
 
 import { JSX } from "react";
 
@@ -71,7 +70,7 @@ function AreaBenifits() {
   return (
     <section
       id="area-benifits"
-      className="animate-slide-up px-4 pb-8 md:pb-0 pt-16 md:pt-28 max-w-[1220px] mx-auto bg-black text-white"
+      className="animate-slide-up px-0 md:px-4 pb-8 md:pb-0 pt-16 md:pt-28 max-w-[1220px] mx-auto bg-black text-white"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 md:grid-rows-[256px_auto_auto] w-full gap-10 md:gap-y-20 md:mx-16 px-4 md:px-0">
         {/* Heading */}
@@ -127,15 +126,7 @@ function AreaBenifits() {
         })}
       </div>
       {/* Train image */}
-      <div className="relative w-full h-[60vh] md:h-[70vh] overflow-hidden md:mt-10">
-        <Image
-          src={TrainStationImage}
-          layout="fill"
-          objectFit="cover"
-          className="train-image"
-          alt="train-station-1"
-        />
-      </div>
+      <div className="h-[70vh] w-full overflow-hidden bg-[url(/svg/train-image-1.svg)] bg-cover bg-no-repeat md:bg-contain md:bg-center train-image" />
     </section>
   );
 }
