@@ -72,9 +72,9 @@ function About() {
       <div className="px-4 md:px-10 mt-8">
         <div className="md:h-[45vh] h-[50vh] relative overflow-hidden bg-[url(/svg/map-1.svg)] bg-cover object-left rounded-t-xl md:rounded-xl md:object-center object-cover bg-no-repeat md:object-contain text-black px-4">
           <div className="hidden md:block md:absolute top-[10%] right-[5%] bg-white md:bg-transparent rounded-md max-w-[450px]">
-            <h1 className="text-[13px] md:text-[15px] py-2 font-europe-grotesk tracking-tight">
+            <h1 className="text-[13px] md:text-[16px] py-2 font-europe-grotesk tracking-tight">
               This project, near the renowned Politecnico di Milano, offers{" "}
-              <span className="font-birds-of-paradise tracking-normal mr-1">
+              <span className="font-birds-of-paradise tracking-normal mr-1 text-lg">
                 modern and versatile
               </span>
               spaces for companies looking for a{" "}
@@ -107,7 +107,7 @@ function About() {
       </div>
 
       {/* Details and Specification Section */}
-      <div className="flex flex-col gap-28 mt-20 text-white bg-black px-8 py-0 md:mx-16">
+      <div className="flex flex-col gap-28 mt-20 text-white bg-black px-4 py-0 md:mx-16">
         {/* Project Details */}
         <div className="flex flex-col md:flex-row justify-between md:gap-0 gap-12">
           {/* Left text */}
@@ -227,7 +227,7 @@ function About() {
           <span className="font-birds-of-paradise">Properties</span>
         </h1>
 
-        <div className="flex flex-col gap-8 w-full md:max-w-[532px] items-start justify-center md:px-0 px-4">
+        <div className="flex flex-col gap-8 w-full md:max-w-[532px] items-start justify-center">
           <span className="text-[30px] md:text-[35px] font-normal leading-tight">
             The Bovisa District is not just a collection of buildings but{" "}
             <span className="font-birds-of-paradise">a true ecosystem</span>.

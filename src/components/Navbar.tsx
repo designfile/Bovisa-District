@@ -34,9 +34,8 @@ function Navbar() {
                 ? Black_Bovisa_District_Image
                 : White_Bovisa_District_Image
             }
-            width={153}
-            height={22}
             alt="Bovisa District"
+            className="w-[140px] h-[20px] md:w-[160px] md:h-[25px]"
           />
         </Link>
 

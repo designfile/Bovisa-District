@@ -3,7 +3,7 @@
 import nodemailer from "nodemailer";
 import { EmailHtmlTemplate } from "@/template/template";
 
-export async function SendBookVisitData(formData: FormData): Promise<{
+export async function sendBookVisitData(formData: FormData): Promise<{
   message: string;
 }> {
   const { SMTP_PASSWORD, SMTP_EMAIL, RECEIVER_EMAIL } = process.env;

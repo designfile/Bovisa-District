@@ -126,7 +126,7 @@ function AreaBenifits() {
         })}
       </div>
       {/* Train image */}
-      <div className="h-[70vh] w-full overflow-hidden bg-[url(/svg/train-image-1.svg)] bg-cover bg-no-repeat md:bg-contain md:bg-center train-image" />
+      <div className="h-[70vh] w-full overflow-hidden bg-[url(/svg/train-image-1.svg)] bg-cover bg-no-repeat md:bg-contain lg:bg-cover md:bg-center train-image" />
     </section>
   );
 }

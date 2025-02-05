@@ -61,7 +61,7 @@ function Clients() {
                 <div
                   className={clsx(
                     "w-fit h-full flex gap-1 items-start md:mr-4",
-                    idx === 1 ? "ml-0" : "mt-1"
+                    idx === 1 ? "mt-0" : "mt-1"
                   )}
                 >
                   (
@@ -74,7 +74,12 @@ function Clients() {
                   />
                   )
                 </div>
-                <span className="md:text-lg text-[15px] ml-10 md:ml-4">
+                <span
+                  className={clsx(
+                    "md:text-lg text-[15px] sm:ml-4",
+                    idx === 1 ? "ml-7" : "ml-10"
+                  )}
+                >
                   {el.content}
                 </span>
               </div>

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { SendBookVisitData } from "@/actions";
+import { sendBookVisitData } from "@/actions";
 import EmailInput from "@/components/input/EmailInput";
 import TextInput from "@/components/input/TextInput";
 import clsx from "clsx";
@@ -25,7 +25,7 @@ function SubmitButton() {
 export default function BookVisit() {
   async function handleSubmit(formData: FormData) {
     try {
-      const response = await SendBookVisitData(formData);
+      const response = await sendBookVisitData(formData);
       toast.success(response.message);
     } catch (error: any) {
       toast.error(error.message);
