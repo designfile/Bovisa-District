@@ -52,7 +52,7 @@ function About() {
       className="animate-slide-up py-8 max-w-[1220px] mx-auto bg-black text-white"
     >
       {/* Header Section */}
-      <div className="h-[80vh] w-full relative overflow-hidden bg-[url(/svg/header-image-1.svg)] object-left md:object-center object-cover bg-no-repeat md:object-contain">
+      <div className="h-[72vh] w-full relative overflow-hidden bg-[url(/img/header-image-1.png)] bg-left md:bg-center bg-cover bg-no-repeat">
         <div className="relative inset-0 md:top-[5%] flex flex-col justify-center items-center gap-2 text-center">
           <h1 className="md:text-5xl text-3xl text-white">
             Welcome to <br className="block md:hidden" /> the{" "}
@@ -220,7 +220,7 @@ function About() {
       </div>
 
       {/* Tree Image part */}
-      <div className="h-[80vh] w-full overflow-hidden bg-[url(/svg/trees-image-1.svg)] bg-center bg-cover bg-no-repeat md:bg-contain" />
+      <div className="h-[80vh] w-full overflow-hidden bg-[url(/img/trees-image-1.png)] bg-center bg-cover bg-no-repeat md:bg-contain" />
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 w-full gap-10 md:gap-y-20 md:mx-16 px-4 md:px-0">
         <h1 className="md:block hidden text-[40px]">
           Representative{" "}
