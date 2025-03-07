@@ -2,7 +2,7 @@ import Image from "next/image";
 import Vector_1 from "../../../../public/svg/Vector-1.svg";
 import Vector_2 from "../../../../public/svg/Vector-2.svg";
 import Vector_3 from "../../../../public/svg/Vector-3.svg";
-import TestimonialsImage from "../../../../public/svg/testimonials-references-1.svg";
+import TestimonialsImage from "../../../../public/img/testimonials-references-1.png";
 
 import { JSX } from "react";
 import BookVisitLink from "@/components/BookVisitLink";
