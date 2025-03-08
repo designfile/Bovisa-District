@@ -70,7 +70,7 @@ function About() {
 
       {/* Map Section */}
       <div className="px-4 md:px-10 mt-8">
-        <div className="md:h-[45vh] h-[50vh] relative overflow-hidden bg-[url(/img/map-1.png)] bg-cover object-left rounded-t-xl md:rounded-xl md:object-center object-cover bg-no-repeat md:object-contain text-black px-4">
+        <div className="md:h-[45vh] h-[50vh] relative overflow-hidden bg-[url(/img/map-2.png)] bg-cover object-left rounded-t-xl md:rounded-xl md:object-center object-cover bg-no-repeat md:object-contain text-black px-4">
           <div className="hidden md:block md:absolute top-[10%] right-[5%] bg-white md:bg-transparent rounded-md max-w-[450px]">
             <h1 className="text-[13px] md:text-[16px] py-2 font-europe-grotesk tracking-tight">
               This project, near the renowned Politecnico di Milano, offers{" "}
